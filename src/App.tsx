@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Bell, Home, Ticket, Trophy, Users, User, Menu, X, TrendingUp, Gift, Star, Crown, Moon, Sun } from 'lucide-react';
 
 // 로또 번호별 색상 함수 (전역 사용)
-const getLottoColor = (num) => {
+const getLottoColor = (num: number): string => {
   if (num <= 10) return 'from-yellow-400 to-yellow-600'; // 노란색
   if (num <= 20) return 'from-blue-400 to-blue-600';    // 파란색
   if (num <= 30) return 'from-red-400 to-red-600';      // 빨간색
@@ -21,7 +21,7 @@ const App = () => {
   };
 
   // 로또 번호별 색상 함수
-  const getLottoColor = (num) => {
+  const getLottoColor = (num: number): string => {
     if (num <= 10) return 'from-yellow-400 to-yellow-600'; // 노란색
     if (num <= 20) return 'from-blue-400 to-blue-600';    // 파란색
     if (num <= 30) return 'from-red-400 to-red-600';      // 빨간색
